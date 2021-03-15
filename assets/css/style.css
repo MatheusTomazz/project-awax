@@ -81,6 +81,17 @@ header{
     height: 750px;
 }
 
+.button{
+    padding: 10px 30px;
+    background-color: #B28756;
+    margin-top:32px;
+    border-radius:20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    display: -inlie-block;
+}
+
 
 /** content sliders */
 
@@ -134,16 +145,7 @@ header{
 .banner h2{
     margin-top: 20px;
 }
-.banner a{
-    padding: 10px 30px;
-    background-color: #B28756;
-    margin-top:32px;
-    border-radius:20px;
-    font-size: 13px;
-    text-decoration: none;
-    color: white;
-    display: block;
-}
+
 
 
 /** Pointers */
@@ -193,19 +195,18 @@ light(fundo branco e letras pretas) */
     text-align: center;
 }
 
-.section-title{
+.default .section-title{
     font-size: 20px;
 }
 
-.section-desc{
+.default .section-desc{
     margin-top: 10px;
     font-size:15px;
     color: #ccc;
     margin-bottom: 40px;
 }
 
-.section-body{
-    background: chartreuse;
+.default .section-body{
     margin: auto;
     max-width: 1140px;
 }
@@ -216,7 +217,8 @@ light(fundo branco e letras pretas) */
     background-color: #F7F7F7;
 }
 
-.default.light  .section-title{
+.default.light  .section-title,
+.default.light .section-body{
     color:#000;
 }
 
@@ -226,6 +228,43 @@ light(fundo branco e letras pretas) */
     background-color: #000;
 }
 
-.default.dark .section-title{
+.default.dark .section-title,
+.default.dark .section-body{
      color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+/** CSS specific areas   */
+
+
+/** Content About Us */
+
+.section-aboutus{
+    display: flex;
+}
+
+.section-aboutus--left{
+    flex: 1;
+}
+
+.section-aboutus--left p{
+    line-height: 25px;
+}
+
+.section-aboutus--right{
+    width:520px;
+    text-align: center;
+}
+
+.section-aboutus--right img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
 }
