@@ -8,6 +8,7 @@
 body{
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header{
@@ -169,4 +170,62 @@ header{
 /** There can be no space between .pointer.active  */
 .banner .pointer.active{
     background-color: #B28756;
+}
+
+/**Criando um padrão para representar os dois tipos de layout de sections, aqui já estamos definindo os atritubos de alinhamento do titulo, descrição e conteúdo e também criando dois tipos de classes diferentes para representar o mesmo layout com a diferença de cores predominantes
+dark(fundo preto e letras brancas
+light(fundo branco e letras pretas) */
+
+/** Setting a standard for two different types of layout */
+
+.default{
+    
+    padding-top:50px;
+    padding-bottom:50px;
+    
+
+}
+
+.default .section-title,
+.default .section-desc{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 20px;
+}
+
+.section-desc{
+    margin-top: 10px;
+    font-size:15px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.section-body{
+    background: chartreuse;
+    margin: auto;
+    max-width: 1140px;
+}
+
+/** Layout Light*/
+
+.default.light{
+    background-color: #F7F7F7;
+}
+
+.default.light  .section-title{
+    color:#000;
+}
+
+/** Layout Dark*/
+
+.default.dark{
+    background-color: #000;
+}
+
+.default.dark .section-title{
+     color: #FFF;
 }
